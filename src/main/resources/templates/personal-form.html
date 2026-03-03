@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Personal</title>
+
+    <link rel="stylesheet" th:href="@{/styles/style.css}">
+</head>
+<body>
+
+<h1 th:text="${personal.idPersonal == null} ? 'Novo Personal' : 'Editar Personal'"></h1>
+
+<form th:action="@{${personal.idPersonal == null} ? '/personais' : '/personais/' + ${personal.idPersonal}}"
+      th:object="${personal}"
+      method="post">
+
+    <input type="hidden" th:field="*{idPersonal}" />
+
+    <h3>Dados de Acesso</h3>
+
+    <label>Email:</label>
+    <input type="email" th:field="*{usuario.email}" required />
+    <br><br>
+
+    <label>Senha:</label>
+    <input type="password" th:field="*{usuario.senha}" required />
+    <br><br>
+
+    <h3>Dados do Personal</h3>
+
+    <label>Nome:</label>
+    <input type="text" th:field="*{nome}" required />
+    <br><br>
+
+    <label>CPF:</label>
+    <input type="text" th:field="*{cpf}" required />
+    <br><br>
+
+    <button type="submit">Salvar</button>
+</form>
+
+<br>
+<a th:href="@{/personais}">Voltar</a>
+
+</body>
+</html>

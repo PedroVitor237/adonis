@@ -1,0 +1,47 @@
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personais</title>
+
+    <link rel="stylesheet" th:href="@{/styles/style.css}">
+</head>
+<body>
+
+<h1>Lista de Personais</h1>
+
+<a th:href="@{/personais/novo}">Novo Personal</a>
+
+<br><br>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="personal : ${personais}">
+            <td th:text="${personal.idPersonal}"></td>
+            <td th:text="${personal.nome}"></td>
+            <td th:text="${personal.cpf}"></td>
+            <td>
+                <a th:href="@{/personais/editar/{id}(id=${personal.idPersonal})}">Editar</a>
+                |
+                <a th:href="@{/personais/deletar/{id}(id=${personal.idPersonal})}"
+                   onclick="return confirm('Tem certeza que deseja excluir?')">
+                   Excluir
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<a th:href="@{/}">Voltar</a>
+
+</body>
+</html>
