@@ -23,8 +23,7 @@ Projeto acadêmico desenvolvido para a disciplina de **Banco de Dados** do curso
 ## 📌 Funcionalidades Implementadas
 
 ✔ Cadastro de Alunos  
-✔ Cadastro de Personal Trainers  
-✔ Relacionamento Aluno ↔ Personal    
+✔ Cadastro de Personal Trainers      
 ✔ Listagem, edição e exclusão  
 
 ---
