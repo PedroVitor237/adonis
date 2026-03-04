@@ -11,6 +11,7 @@ Projeto acadêmico desenvolvido para a disciplina de **Banco de Dados** do curso
 - Java 21
 - Spring Boot
 - Spring Data JPA
+- Hibernate
 - Thymeleaf
 - Lombok
 - MySQL
