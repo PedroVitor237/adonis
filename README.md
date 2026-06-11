@@ -24,7 +24,7 @@ Projeto acadêmico desenvolvido para a disciplina de **Banco de Dados** do curso
 ## 📌 Funcionalidades Implementadas
 
 ✔ Cadastro de Alunos  
-✔ Cadastro de Personal Trainers      
+✔ Cadastro de Personal Trainers
 ✔ Listagem, edição e exclusão  
 
 ---
@@ -97,7 +97,7 @@ spring.jpa.hibernate.ddl-auto=update
 - Autenticação com Spring Security
 - Dashboard Personal Trainer
 - Dashboard Aluno
-- Dashboard Administrativo 
+- Dashboard Administrativo
 - Melhorias no layout (CSS ou Tailwind)
 - Sistema de Treinos de Cadastro
 - Sistema de Pagamentos
