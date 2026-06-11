@@ -56,19 +56,19 @@ Relacionamentos principais:
 
 ## ⚙️ Como Executar o Projeto
 
-1. Clone o repositório:
+1.Clone o repositório:
 
 ```bash
 git clone https://github.com/PedroVitor237/adonis.git
 ```
 
-2. Configure o banco MySQL:
+2.Configure o banco MySQL:
 
 ```sql
 CREATE DATABASE mydb;
 ```
 
-3. Configure o `application.properties`:
+3.Configure o `application.properties`:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/mydb
@@ -77,19 +77,18 @@ spring.datasource.password=SUA_SENHA
 spring.jpa.hibernate.ddl-auto=update
 ```
 
-4. Execute o projeto:
+4.Execute o projeto:
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-<!--
-  ## 📚 Autor
+## 📚 Autor
 
-Pedro Vitor
-Curso: Análise e Desenvolvimento de Sistemas  
-Universidade Estadual do Maranhão - UEMA
--->
+### [Pedro Vitor](https://github.com/PedroVitor237)
+
+- Análise e Desenvolvimento de Sistemas  
+- Universidade Estadual do Maranhão - UEMA
 
 ---
 
